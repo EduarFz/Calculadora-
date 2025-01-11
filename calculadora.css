@@ -1,0 +1,95 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de la calculadora */
+.contenedor-calculadora {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pantalla */
+.pantalla {
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid #00796b;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+/* Botones generales */
+.boton {
+    background-color: #d1c4e9;
+    color: #4527a0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.boton:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones de operadores */
+.operador {
+    background-color: #ffccbc;
+    color: #bf360c;
+}
+
+/* Botón especial: igual */
+#igual {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    grid-column: span 2;
+}
+
+/* Botón especial: cero */
+.cero {
+    grid-column: span 2;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .pantalla {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .boton {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
