@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (id === "multiplicacion") {
                 agregarPantalla("*"); // multiplicacion
             } else if (id === "raiz") {
-                // agregarPantalla("sqrt"); // raiz
-                mostrarAlerta();
+                agregarPantalla("sqrt"); // raiz
+                // mostrarAlerta();
             } else {
                 agregarPantalla(boton.textContent); // Agrega el contenido del botón
             }

@@ -73,7 +73,7 @@ body {
 #igual {
     background-color: #c8e6c9;
     color: #2e7d32;
-    grid-column: span 1;
+    grid-column: span 2;
 }
 
 #clear {
@@ -85,10 +85,10 @@ body {
 #borrar {
     background-color: #cfcfcf;
     color: #2c2c2c;
-    grid-column: span 1;
+    grid-column: span 2;
 }
 
-#punto {
+.punto {
     background-color: #d4f184;
     color: #85b309;
     grid-column: span 1;
