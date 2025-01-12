@@ -73,12 +73,30 @@ body {
 #igual {
     background-color: #c8e6c9;
     color: #2e7d32;
-    grid-column: span 2;
+    grid-column: span 1;
+}
+
+#clear {
+    background-color: #f594cd;
+    color: #9b114a;
+    grid-column: span 1;
+}
+
+#borrar {
+    background-color: #cfcfcf;
+    color: #2c2c2c;
+    grid-column: span 1;
+}
+
+#punto {
+    background-color: #d4f184;
+    color: #85b309;
+    grid-column: span 1;
 }
 
 /* Botón especial: cero */
 .cero {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 /* Responsividad */

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Minimalista</title>
     <link rel="stylesheet" href="calculadora.css">
 </head>
+
 <body>
     <div class="contenedor-calculadora">
         <div class="pantalla" id="pantalla">
@@ -13,8 +15,8 @@
         </div>
         <div class="botones">
             <button class="boton" id="clear">C</button>
-            <button class="boton" id="potencia">x<sup>y</sup></button>
-            <button class="boton" id="raiz">√</button>
+            <button class="boton operador" id="potencia">x<sup>y</sup></button>
+            <button class="boton operador" id="raiz">√</button>
             <button class="boton operador" id="division">÷</button>
 
             <button class="boton numero" id="siete">7</button>
@@ -32,9 +34,16 @@
             <button class="boton numero" id="tres">3</button>
             <button class="boton operador" id="suma">+</button>
 
+            <button class="boton punto" id="punto">.</button>
             <button class="boton cero" id="cero">0</button>
+            <button class="boton borrar" id="borrar">borrar</button>
             <button class="boton" id="igual">=</button>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+        <script src="calculadora.js"></script>
+
     </div>
 </body>
+
 </html>
